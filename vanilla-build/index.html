@@ -44,9 +44,18 @@
         <div class="square shadow"></div>
 
         <!-- Scoreboard  -->
-        <div class="score"></div>
-        <div class="score"></div>
-        <div class="score"></div>
+        <div class="score shadow" style="background-color: var(--turquoise)">
+          <p>Player 1</p>
+          <span>0 Wins</span>
+        </div>
+        <div class="score shadow" style="background-color: var(--light-gray)">
+          <p>Ties</p>
+          <span>0</span>
+        </div>
+        <div class="score shadow" style="background-color: var(--yellow)">
+          <p>Player 2</p>
+          <span>0 Wins</span>
+        </div>
       </div>
     </main>
 
@@ -67,5 +76,14 @@
         >
       </p>
     </footer>
+
+    <!-- Modal that opens when game ends -->
+    <div class="modal hidden">
+      <div class="modal-contents">
+        <p>Player 1 wins!</p>
+        <button>Play Again</button>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
   </body>
 </html>
